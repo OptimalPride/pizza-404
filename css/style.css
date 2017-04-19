@@ -1,0 +1,162 @@
+
+
+/*style generalise des elements*/
+li	{
+	list-style: none;
+}
+
+ul {
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: green;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+}
+/*style de la nav*/
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 50px;
+	background-color: #284371;
+	padding: 0 10px;
+}
+
+nav > ul {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+nav > ul > li {
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+nav > ul > li > a {
+	padding: 10px 0;
+	margin: 0 10px;
+	color: white;
+}
+
+nav > ul > li > a:hover {
+	background-color: #1D3153;
+}
+
+nav > header > h1 {
+	color: #E90F23;
+	font-size: 2rem;
+}
+
+nav > a {
+	padding: 10px 0;
+	color: white;
+}
+
+nav > a:hover {
+	background-color: #1D3153;
+}
+
+/* Style du main*/
+
+main {
+	height: 93vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Style du box texte*/
+
+.bg-steel {
+	background-image: url(../images/text_background01.jpg);
+}
+
+.text {
+	margin-top: 80px;
+	height: 50vh;
+	width: 60vw;
+	opacity: 0.9;
+	border-radius: 10px;
+}
+
+#text-box {
+	padding: 20px;
+	font-size: 1.5rem;
+	color: white;
+}
+
+
+/*Style partie interactive*/
+
+.interactive {
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+}
+
+.interactive > img {
+	height: 200px;
+}
+
+.choices {
+	display: flex;
+	flex-direction: column;
+}
+
+.choices > li {
+}
+
+.choices > li > a {
+	line-height: 90px; 
+	padding: 25px 50px;
+	border: 3px solid grey;
+	border-radius: 15px;
+	background-color: #1B3E38;
+}
+
+
+/*style du footer*/
+
+footer {
+	height: 40px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+ 	background-color: lightgray;
+	text-align: center;
+}
+
+/*
+::-webkit-scrollbar {
+      width: 20px;
+}
+
+::-webkit-scrollbar-track {
+      background-color: #3F68ED;
+} 
+
+::-webkit-scrollbar-thumb {
+      background-color: #0017C6; 
+} 
+
+ 
+::-webkit-scrollbar-button {
+      background-color: rgba(255, 255, 255, 0);
+} 
+
+::-webkit-scrollbar-corner {
+      background-color: black;
+} 
+*/
