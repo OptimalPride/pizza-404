@@ -1,12 +1,8 @@
-<?php 
-
-require_once("inc/init.inc.php");
-
-?>
 
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
 	<title>Game Title Alpha V1</title>
 </head>
 
@@ -23,11 +19,11 @@ require_once("inc/init.inc.php");
 			<a href="#">Quitter</a>
 		</nav>
 
-	<main <?= $background; ?>>
+	<main>
 
 		<!--Section contenant le texte-->
 		<section class="text bg-steel">
-			<p id="text-box"><?= $story; ?></p>
+			<p id="text-box"></p>
 		</section>
 
 		<!--Section contenant tous les boutons-->
@@ -35,9 +31,9 @@ require_once("inc/init.inc.php");
 			<img src="images/ship01.png" id="ship-image">
 			<!--Boutons choix multiples-->
 			<ul class="choices">
-				<li><a href="?page_id=<?= $link1 ?>"><?= $char1; ?></a></li>
-				<li><a href="?page_id=<?= $link2 ?>"><?= $char2 ?></a></li>
-				<li><a href="?page_id=<?= $link3 ?>"><?= $char3 ?></a></li>
+				<li><a href="2" id="choice1"></a></li>
+				<li><a href="3" id="choice2"></a></li>
+				<li><a href="4" id="choice3"></a></li>
 			</ul>
 			<img src="images/char01.png" id="character-image">
 		</section>
@@ -47,6 +43,6 @@ require_once("inc/init.inc.php");
 		<p>Game Title version alpha 3.0</p>
 	</footer>
 
-	<script type="text/javascript" src="js/jquery.js"></script>
+
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
