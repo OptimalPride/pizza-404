@@ -40,7 +40,7 @@
 	</main>
 
 	<footer>
-		<p>Game Title version alpha 3.0</p>
+		<p>Game Title version alpha 4.0</p>
 	</footer>
 
 
