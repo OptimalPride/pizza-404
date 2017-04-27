@@ -7,7 +7,7 @@ $pdo = new PDO("mysql:host=localhost;dbname=orbital_express", "root", "");
 $page_id = 1;
 
 
-if($_POST || $_GET) {
+if($_GET) {
 	if (isset($_GET["page_id"])) {
 		$page_id = $_GET["page_id"];
 	}
@@ -42,12 +42,13 @@ if($_POST || $_GET) {
 		$retour["link1"] = $links[0];
 		$retour["link2"] = $links[1];
 		$retour["link3"] = $links[2];
-
+		$retour["erreur"] = false;
 	}//fin du empty resultat
 
-	$retour["erreur"] = false;
 
 } //fin if get
+
+
 
 echo json_encode($retour);
 ?>
