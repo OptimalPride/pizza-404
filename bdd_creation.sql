@@ -2,13 +2,12 @@ CREATE DATABASE orbital_express;
 
 USE orbital_express;
 
-CREATE TABLE IF NOT EXISTS membre (
+CREATE TABLE IF NOT EXISTS user (
   id_user INT(5) NOT NULL AUTO_INCREMENT,
   pseudo VARCHAR(20) NOT NULL,
   email VARCHAR(50) NOT NULL,
-  mdp VARCHAR(128) NOT NULL,
+  pwd VARCHAR(128) NOT NULL,
   avatar VARCHAR(50) DEFAULT NULL,
-  statut INT(1) NOT NULL,
   PRIMARY KEY (id_user)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -29,11 +28,13 @@ CREATE TABLE IF NOT EXISTS save (
   PRIMARY KEY (id_save)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+Insertion de données user :
 
-INSERT INTO membre (id_user, pseudo, email, mdp, avatar, statut) VALUES 
-(1, "admin", "admin@email.com", "21232f297a57a5a743894a0e4a801fc3", "avatar01", 1),
-(2, "membre", "membre@email.com", "5a99c8cac333affeed05a24fe0d6f61c", "avatar02", 0);
+INSERT INTO user (id_user, pseudo, email, pwd, avatar) VALUES 
+(1, "member", "member@email.com", "5a99c8cac333affeed05a24fe0d6f61c", "avatar02"),
+(2, "admin", "admin@email.com", "21232f297a57a5a743894a0e4a801fc3", "avatar03");
 
+Insertion de données game:
 
 INSERT INTO game (id_page, story, background, animation, relation) VALUES 
 (1, "story_page1.txt", "stars01.jpg", "animation01", "2 - 3 - 4"),
