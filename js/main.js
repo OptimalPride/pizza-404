@@ -3,7 +3,7 @@ $(function(){
 
 	function dbbrequest(page) {
 		var request = $.ajax({ 	
-			url: "inc/functions.inc.php",
+			url: "php/game.php",
 			method: "GET",
 			data : {page_id : page}
 		});	
@@ -30,7 +30,7 @@ $(function(){
 	var page = 1;
 	dbbrequest(page);
 
-	$("a").click(function(e) {
+	$("a.choice").click(function(e) {
 		e.preventDefault(); 
 
 		var	page = $(this).attr('href');
