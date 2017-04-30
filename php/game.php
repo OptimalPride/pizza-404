@@ -35,7 +35,7 @@ if($_GET) {
 		$retour["response3"] = $response3[1];
 
 		$bg = $resultat[0]["background"];
-		$retour["background"] = "url(images/$bg)";
+		$retour["background"] = "url(img/$bg)";
 
 		$links_all = $resultat[0]["relation"];
 		$links = explode(" - ", $links_all);

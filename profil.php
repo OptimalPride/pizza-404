@@ -14,6 +14,7 @@ require_once("inc/header.inc.php");
 
 <a href="game.php">Acces au jeu</a>
 
+
 <?php
 
 require_once("inc/footer.inc.php");
