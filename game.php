@@ -2,9 +2,9 @@
 
 require_once("inc/init.inc.php");
 
-if(!userConnecte()){
-	header("location:index.php");
-}
+// if(!userConnecte()){
+// 	header("location:index.php");
+// }
 
 require_once("inc/header.inc.php");
 

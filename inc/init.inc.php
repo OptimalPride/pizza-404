@@ -1,6 +1,6 @@
 <?php 
 
-$pdo = new PDO("mysql:host=localhost;dbname=orbital_express", "root", "");
+$pdo = new PDO("mysql:host=localhost;dbname=orbital_express_old", "root", "");
 
 session_start();
 

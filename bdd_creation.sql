@@ -1,6 +1,6 @@
-CREATE DATABASE orbital_express;
+CREATE DATABASE orbital_express_old;
 
-USE orbital_express;
+USE orbital_express_old;
 
 CREATE TABLE IF NOT EXISTS membre (
   id_membre INT(5) NOT NULL AUTO_INCREMENT,
@@ -31,9 +31,9 @@ CREATE TABLE IF NOT EXISTS save (
 
 Insertion de données membre :
 
-INSERT INTO membre (id_membre, pseudo, email, mdp, avatar, statut) VALUES 
-(1, "member", "member@email.com", "5a99c8cac333affeed05a24fe0d6f61c", "avatar02", 0),
-(2, "admin", "admin@email.com", "21232f297a57a5a743894a0e4a801fc3", "avatar03", 1);
+INSERT INTO membre (pseudo, email, mdp, avatar, statut) VALUES 
+("member", "member@email.com", "5a99c8cac333affeed05a24fe0d6f61c", "avatar02", 0),
+("admin", "admin@email.com", "21232f297a57a5a743894a0e4a801fc3", "avatar03", 1);
 
 
 Insertion de données game:

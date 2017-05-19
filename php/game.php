@@ -2,7 +2,7 @@
 
 $retour = array("erreur" => true);
 
-$pdo = new PDO("mysql:host=localhost;dbname=orbital_express", "root", "");
+$pdo = new PDO("mysql:host=localhost;dbname=orbital_express_old", "root", "");
 
 $page_id = 1;
 
